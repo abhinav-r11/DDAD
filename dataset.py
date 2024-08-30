@@ -64,7 +64,7 @@ class Dataset_maker(torch.utils.data.Dataset):
                     if self.config.data.name == 'MVTec':
                         target = Image.open(
                             image_file.replace("/test/", "/ground_truth/").replace(
-                                ".png", "_mask.png"
+                                ".jpg", "_mask.jpg"
                             )
                         )
                     else:
